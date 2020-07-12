@@ -1,7 +1,5 @@
 ### Kubectl commands
 
-kubectl apply -f pod.yaml
-
 kubectl apply -f service.yaml   
 
 kubectl apply -f configmap.yaml
