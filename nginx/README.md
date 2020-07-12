@@ -12,3 +12,5 @@ kubectl get pods
 kubectl get services
 
 kubectl get configmaps
+
+kubectl get deployments 
