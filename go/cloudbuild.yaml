@@ -9,5 +9,5 @@ steps:
   env: ['PROJECT_ROOT=github.com/regisoda/codeedu-desafio-k8s']
 - id: "docker build"
   name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--tag=gcr.io/$PROJECT_ID/go-desafio-k8s', '--file=Dockerfile.cloudbuild', '.']
+  args: ['build', '--tag=gcr.io/$PROJECT_ID/codeedu-desafio-k8s', '--file=Dockerfile.cloudbuild', '.']
 images: ['gcr.io/$PROJECT_ID/go-desafio-ci']
