@@ -1,11 +1,11 @@
 steps:
 - id: "go install"
   name: 'gcr.io/cloud-builders/go'
-  args: ['install', './src']
+  args: ['install', './go/src']
   env: ['PROJECT_ROOT=github.com/regisoda/codeedu-desafio-k8s']
 - id: "go test"
   name: 'gcr.io/cloud-builders/go'
-  args: ['test', './src']
+  args: ['test', './go/src']
   env: ['PROJECT_ROOT=github.com/regisoda/codeedu-desafio-k8s']
 - id: "docker build"
   name: 'gcr.io/cloud-builders/docker'
