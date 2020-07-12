@@ -10,4 +10,4 @@ steps:
 - id: "docker build"
   name: 'gcr.io/cloud-builders/docker'
   args: ['build', '--tag=gcr.io/$PROJECT_ID/codeedu-desafio-k8s', '--file=./go/Dockerfile.cloudbuild', '.']
-images: ['gcr.io/$PROJECT_ID/go-desafio-ci']
+images: ['gcr.io/$PROJECT_ID/codeedu-desafio-k8s']
