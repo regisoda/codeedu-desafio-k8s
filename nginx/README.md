@@ -1,3 +1,5 @@
+### Kubectl commands
+
 kubectl apply -f pod.yaml
 
 kubectl apply -f service.yaml   
@@ -14,3 +16,16 @@ kubectl get services
 kubectl get configmaps
 
 kubectl get deployments 
+
+kubectl delete deployments --all
+
+
+### Minikube
+
+minikube version
+
+minikube start
+
+minikube status
+
+minikube service nginx-service

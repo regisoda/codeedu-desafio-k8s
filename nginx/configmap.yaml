@@ -3,12 +3,10 @@ kind: ConfigMap
 metadata:
   name: nginx-configmap
 data:
-  nginx.conf: |
+  index.html: |
 
-    server {
-        listen 80;
-        index index.php index.html;
-        root /usr/share/nginx/html;
-
-        rewrite ^/google$ http://google.com permanent;
-    }
+   <html>
+      <h1>
+        Code.education Rocks
+      </h1> 
+   </html>
