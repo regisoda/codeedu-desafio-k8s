@@ -8,6 +8,8 @@ COPY . .
 
 RUN go get golang.org/x/net/html
 
+RUN go install app -v
+
 RUN go build
 
 FROM alpine:3.8
