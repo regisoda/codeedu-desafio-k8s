@@ -1,14 +1,12 @@
 FROM golang:1.10-alpine3.8 AS multistage
 
-RUN apk add --no-cache --update git
-
 WORKDIR /go/src/app
 
 COPY . .
 
 RUN go get golang.org/x/net/html
 
-RUN go install -v 
+RUN go install  
 
 RUN go build
 
