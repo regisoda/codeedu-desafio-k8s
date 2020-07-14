@@ -8,7 +8,7 @@ COPY . .
 
 RUN go get golang.org/x/net/html
 
-RUN go install  
+RUN go install app
 
 RUN go build
 
