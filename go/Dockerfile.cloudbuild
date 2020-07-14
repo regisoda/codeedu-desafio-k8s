@@ -1,21 +1,5 @@
-FROM golang:1.10-alpine3.8 AS multistage
+FROM scratch
 
-RUN apk add --no-cache --update git
+COPY gopath/bin/src /src
 
-WORKDIR /go/src/app
-
-COPY . .
-
-RUN go get golang.org/x/net/html
-
-RUN go install app -v
-
-RUN go build
-
-FROM alpine:3.8
-
-COPY --from=multistage /go/bin/app /go/bin/
-
-EXPOSE 8080
-
-CMD ["/go/bin/app"]
+ENTRYPOINT ["/src"]
