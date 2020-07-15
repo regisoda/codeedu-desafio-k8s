@@ -1,29 +1,15 @@
-### Kubectl commands
-
-kubectl apply -f service.yaml   
-
-kubectl apply -f configmap.yaml
+### Commands k8s
 
 kubectl apply -f deployment.yaml
 
+kubectl apply -f service.yaml   
 
-kubectl get pods
+kubectl get svc
 
-kubectl get services
-
-kubectl get configmaps
-
-kubectl get deployments 
-
-kubectl delete deployments --all
+kubectl get deployments
 
 
-### Minikube
 
-minikube version
+### Test k8s
 
-minikube start
-
-minikube status
-
-minikube service nginx-service
+curl http://35.232.56.24:8080
